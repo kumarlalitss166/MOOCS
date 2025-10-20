@@ -2,7 +2,8 @@ import pickle
 from flask import Flask,request,render_template
 from sklearn.preprocessing import StandardScaler
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 ## import ridge regresor model and standard scaler pickle
 ridge_model=pickle.load(open('./models/Ridge_Regression_Model_on_Algerian_Forest_Fires_Cleaned_Dataset.pkl','rb'))
